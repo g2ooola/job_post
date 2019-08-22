@@ -1,24 +1,47 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* ToDo
+  * company list & job list 的
+    * 排序方式
+    * 分頁
+  * choise
+    * 加上 cache
+  * company 的內容是否改用一個 json 存就好, 不需開各個欄位?
+  
 
-Things you may want to cover:
 
-* Ruby version
+* 一般使用者
+  * 首頁有兩個區塊
+    * 公司區塊隨機顯示五間公司以及有一個公司列表的連結
+    * 職缺區塊隨機顯示十個『開放』職缺以及一個職缺連結
+  * 公司列表
+    * 列出所有『開放』之公司
+    * 點擊公司可進入公司詳細頁面
+  * 職缺列表
+    * 列出所有『開放』之職缺
+    * 點擊職缺可以進入職缺詳細頁面
+  * 公司詳細頁面
+    * 公司資訊
+    * 該公司的『開放』職缺
+  * 職缺詳細頁面
+    * 職缺資訊
+    * 應徵按鈕
 
-* System dependencies
+* 管理者
+  * （不用登入，直接連ＵＲＬ即可）
+  * 公司管理頁面
+    * 編輯公司資訊
+  * 職缺列表頁面
+    * 列出所有職缺（包含開放與不開放）
+    * 新增職缺
+    * 點擊職缺進入職缺資訊（此頁面可直接修改職缺資訊）
+    * 開啟/關閉職缺按鈕
+    * 刪除職缺按鈕
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 附註
+  * 作業重點在於後端，頁面只需功能可以執行即可
+  * 程式碼請上傳至 github 或 gitlab 等公開的服務
+  * 請使用您熟悉的任一語言 + 任一關連式資料庫實作
+  * 服務請部署至 aws, heroku 或任一您熟悉的雲端平台，讓我們可以實際透過瀏覽器開啟頁面並操作
+  * 作業的用意是讓我們有個討論的基礎，不求完美甚至不一定要完成。（但我們可以在面試時討論一下後續可以怎麼做）
+  * 有任何問題歡迎回信詢問

@@ -1,0 +1,11 @@
+<div id="container">
+  <div id="company-div">
+    <%= choice_banner('Company', 'more companies', companys_path) %>
+    <%= company_grid(@company_choise) %>
+  </div>
+
+  <div id="job-div">
+    <%= choice_banner('Job', 'more jobs', jobs_path) %>
+    <%= job_grid(@job_choise) %>
+  </div>
+</div>
