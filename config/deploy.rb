@@ -38,4 +38,18 @@ append :linked_dirs, "log"
 # set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-set :ssh_options, verify_host_key: :secure
+# set :ssh_options, verify_host_key: :secure
+
+# set :ssh_options, {
+#   keys: %w(/Users/gsx/.ssh/id_rsa),
+#   forward_agent: true,
+#   # auth_methods: %w(password)
+# }
+
+# for capistrano/bundler
+append :linked_dirs, '.bundle'
+
+# for rvm
+set :rvm_ruby_version, '2.5.1'      # Defaults to: 'default'
+set :rvm_custom_path, '/usr/local/rvm'  # only needed if not detected
+

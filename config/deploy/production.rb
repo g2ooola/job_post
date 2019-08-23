@@ -6,6 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+server 'yourator', user: 'deployer', roles: %w{app}
 
 
 
@@ -42,7 +43,7 @@
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/home/gsx/.ssh/id_rsa),
+   keys: %w(/Users/gsx/.ssh/id_rsa),
    forward_agent: true,
    # auth_methods: %w(password)
  }
