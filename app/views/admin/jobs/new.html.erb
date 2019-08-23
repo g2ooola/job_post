@@ -1,0 +1,13 @@
+<div id="content">
+  <%= form_for @job, url: admin_jobs_path do |f| %>
+    <div>Job Name:      <%= f.text_field :name %></div>
+    <div>Active:        <%= f.check_box  :active %></div>
+    <div>Salary Range:  <%= @job.salary_range %> 先略過, json 用 form_for 比較麻煩</div>
+    <div>Content:       <%= f.text_field :content %></div>
+    <div>Condition:     <%= f.text_field :condition %></div>
+    <div>Welfare:       <%= f.text_field :welfare %></div>
+    <div><%= f.submit %></div>
+  <% end %>
+
+  <%= show_flash(flash) %>
+</div>

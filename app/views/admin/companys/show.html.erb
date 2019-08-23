@@ -1,0 +1,10 @@
+<div id="container">
+  <%= edit_company_botton(@company) %>
+  <%= new_job_botton %>
+  <div id="all-jobs">
+    <div> job list </div>
+    <%= job_list(@jobs, path_function: :edit_admin_job_path) %>
+  </div>
+
+  <%= show_flash(flash) %>
+</div>

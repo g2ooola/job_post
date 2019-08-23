@@ -1,11 +1,11 @@
 class JobsController < ApplicationController
   def index
     # TODO : page
-    @jobs = Job.includes(:company)
+    @jobs = Job.actived.includes(:company).order(:id)
   end
 
   def show
-    @job = Job.includes(:company).find_by(id: params[:id])
+    @job = Job.actived.includes(:company).find_by(id: params[:id])
     render_404 if @job.nil?
   end
 end

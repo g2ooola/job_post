@@ -1,0 +1,13 @@
+<div id="content">
+  <%= form_for @company, method: :put, url: admin_company_path(@company) do |f| %>
+    <div>Company Name: <%= f.text_field :name %></div>
+    <div>Active:       <%= f.check_box  :active %></div>
+    <div>Media Links:  <%= @company.media_links %> 先略過, json 用 form_for 比較麻煩</div>
+    <div>Interduction: <%= f.text_field :interduction %></div>
+    <div>Philosophy:   <%= f.text_field :philosophy %></div>
+    <div>Welfare:      <%= f.text_field :welfare %></div>
+    <div><%= f.submit %></div>
+  <% end %>
+
+  <%= show_flash(flash) %>
+</div>

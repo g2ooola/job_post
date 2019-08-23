@@ -2,8 +2,14 @@ class Company < ApplicationRecord
   belongs_to :admin
   has_many :jobs
 
-  # TO DO : fix choice
-  def self.choice
-    where(active: true).limit(5)
+  scope :actived, -> { where(active: true) }
+
+  # TODO : fix choice
+  def self.actived_choice
+    actived.limit(5)
+  end
+
+  def actived_jobs
+    jobs.actived
   end
 end

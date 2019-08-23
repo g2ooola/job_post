@@ -1,12 +1,20 @@
 # README
 
+* SomeThing to know
+  * login by path '/admin/login/1'
+  * logout by path ''
 * ToDo
   * company list & job list 的
     * 排序方式
     * 分頁
   * choise
     * 加上 cache
+    * 隨機的方式
   * company 的內容是否改用一個 json 存就好, 不需開各個欄位?
+  * 測試
+
+*
+  * 寫到一半才想起應該要是 companies, 但修改有點麻煩, 就繼續使用了
   
 
 

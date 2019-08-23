@@ -1,8 +1,10 @@
 class Job < ApplicationRecord
   belongs_to :company, counter_cache: true
 
-  # TO DO : fix choice
-  def self.choice
-    where(active: true).limit(10)
+  scope :actived, -> { where(active: true) }
+
+  # TODO : fix choice
+  def self.actived_choice
+    actived.limit(10)
   end
 end
