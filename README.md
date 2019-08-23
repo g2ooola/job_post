@@ -7,9 +7,8 @@
   * company list & job list 的
     * 排序方式
     * 分頁
-  * choise
+  * sample
     * 加上 cache
-    * 隨機的方式
   * company 的內容是否改用一個 json 存就好, 不需開各個欄位?
   * 測試
 

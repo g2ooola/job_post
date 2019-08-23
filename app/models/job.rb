@@ -3,8 +3,5 @@ class Job < ApplicationRecord
 
   scope :actived, -> { where(active: true) }
 
-  # TODO : fix choice
-  def self.actived_choice
-    actived.limit(10)
-  end
+  include Sample
 end
