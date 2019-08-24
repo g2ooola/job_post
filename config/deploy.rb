@@ -6,7 +6,6 @@ set :repo_url, "git@github.com:g2ooola/job_post.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :branch, 'cap'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deployer/rails_application"
