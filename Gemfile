@@ -11,7 +11,8 @@ gem 'rails', '~> 5.2.1'
 # gem 'sqlite3'
 gem 'pg', '~> 1.1.4'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+# gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -57,6 +58,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 end
 
 group :test do
