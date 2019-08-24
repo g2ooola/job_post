@@ -22,10 +22,10 @@ set :deploy_to, "/home/deployer/rails_application"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, %w(config/database.yml /config/master.key config/secrets.yml)
+append :linked_files, 'config/database.yml', 'config/master.key'
 
 # Default value for linked_dirs is []
-append :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets public/system vendor/bundle .bundle public/uploads)
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'vendor/bundle', '.bundle', 'public/uploads'
 # linked_dirs '.bundle'  is needed for capistrano/bundler
 
 # Default value for default_env is {}
